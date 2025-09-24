@@ -5,6 +5,10 @@
 }
 
 .debug{
+    *{
+        border: 1px dashed;
+    }
+
     background-color: red;
     header{
         background-color: blue;
@@ -18,8 +22,21 @@
     }
 
     main{
+        .container{
+            background-color: aqua;
+        }
         .left{
             background-color: blue;
+            .card{
+                background-color: blueviolet;
+                height: 17rem;
+                width: calc(100% /4);
+            }
+            .a{
+                background-color: green;
+
+            }
+            
         }
 
         .right{
@@ -35,6 +52,7 @@
 /*end debug*/
 body{
     height: 100vh;
+    overflow: hidden;
 
 }
 
@@ -54,11 +72,19 @@ header{
 }
 /* main*/
 main{
+    height: 100%;
+    
 
     .left{
         width: 75%;
         display: flex;
         flex-wrap: wrap;
+        overflow-y: visible;
+        overflow-y: scroll;
+        
+        .card{
+
+        }
     }
     .right{
         width: 25%;
