@@ -2,6 +2,8 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    
+    
 }
 
 .debug {
@@ -152,7 +154,7 @@ main {
 
 
     .left {
-        width: 75%;
+        width: 70%;
         display: flex;
         flex-wrap: wrap;
         overflow-y: visible;
@@ -160,6 +162,8 @@ main {
         gap: auto;
         padding-left: 2rem;
         padding-top: 1rem;
+        scrollbar-width: thin;
+        scrollbar-color: var(--bc-search_bg) var(--bc-primary);
 
         .card {
             width: calc(100% / 4);
@@ -176,13 +180,16 @@ main {
             h4{
                 padding-left: 0.7rem;
                 padding-top: 0.5rem;
+                padding-bottom: 2rem;
+                color: var(--bc-search_color);
             }
 
         }
     }
 
     .right {
-        width: 25%;
+        width: 30%;
+        
     }
 
 }
