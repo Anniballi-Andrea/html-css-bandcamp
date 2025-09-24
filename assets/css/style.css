@@ -70,6 +70,7 @@
     display: flex;
 }
 
+
 body {
     height: 100vh;
     overflow: hidden;
@@ -141,10 +142,13 @@ header {
     }
 }
 
+
+
 /* main*/
 main {
     display: flex;
     height: var(--bc-main_height);
+    background-color: var(--bc-primary);
 
 
     .left {
@@ -153,8 +157,28 @@ main {
         flex-wrap: wrap;
         overflow-y: visible;
         overflow-y: scroll;
+        gap: auto;
+        padding-left: 2rem;
+        padding-top: 1rem;
 
-        .card {}
+        .card {
+            width: calc(100% / 4);
+            color: var(--bc-light);
+            img{
+                width: 95%;
+                margin: 0 0 0 0.7rem;
+            }
+
+            p{
+                padding-left: 0.7rem;
+                padding-top: 0.5rem;
+            }
+            h4{
+                padding-left: 0.7rem;
+                padding-top: 0.5rem;
+            }
+
+        }
     }
 
     .right {
