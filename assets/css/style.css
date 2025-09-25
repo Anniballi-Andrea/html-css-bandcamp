@@ -104,10 +104,6 @@ header {
         .search {
             margin-top: 1rem;
 
-            a:hover {
-                background-color: aqua;
-            }
-
             a {
                 text-decoration: none;
                 color: var(--bc-search_color);
@@ -172,6 +168,12 @@ header {
 
         }
     }
+
+    .phone-search {
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        display: none;
+    }
 }
 
 
@@ -211,7 +213,8 @@ main {
 
 
             }
-            .play-button{
+
+            .play-button {
                 display: none;
                 position: absolute;
                 bottom: 8px;
@@ -220,7 +223,8 @@ main {
                 background-color: var(--bc-primary);
                 border-radius: 50%;
                 padding: 0.6rem 0.5rem;
-                i{
+
+                i {
                     color: var(--bc-light);
                 }
 
@@ -241,10 +245,11 @@ main {
         }
 
         .cover:hover {
-            border:1px solid;
-            .play-button{
-                display: contents;
-                
+            border: 1px solid;
+
+            .play-button {
+                display: block;
+
             }
         }
     }
@@ -253,8 +258,7 @@ main {
 
     .right {
         width: 30%;
-
-
+        overflow-y: scroll;
 
         .container {
             color: var(--bc-light);
@@ -341,6 +345,7 @@ main {
 
             .profile {
                 padding: 3rem 0;
+
                 .social {
                     padding-bottom: 3rem;
                     justify-content: space-between;
@@ -350,31 +355,36 @@ main {
                         width: 4rem;
 
                     }
-                    .img-profile{
+
+                    .img-profile {
                         width: 60%;
-                        .icon{
+
+                        .icon {
                             width: 5rem;
                         }
                     }
-                    .name{
+
+                    .name {
                         padding: 0 1rem;
-                        p{
+
+                        p {
                             padding: 0.3rem 0;
                             font-size: 1.5rem;
                         }
-                        
-                        
+
+
                     }
 
                     .follow {
                         background-color: var(--bc-primary);
                         height: 3rem;
                         Margin: 0 1rem 1rem 0;
-                        padding:0 1.5rem;
+                        padding: 0 1.5rem;
                         border-radius: 5px;
                         border: 1px solid var(--bc-light);
                         display: flex;
                         justify-content: center;
+
                         a {
                             text-decoration: none;
                             padding-top: 0.9rem;
@@ -383,12 +393,13 @@ main {
                         }
                     }
 
-                    
+
 
                 }
-                .description{
-                        font-size: 2rem;
-                    }
+
+                .description {
+                    font-size: 2rem;
+                }
             }
 
         }
@@ -401,4 +412,72 @@ main {
 
 
 
+}
+
+@media screen and (max-width:744px) {
+    main {
+        .left {
+
+            .card {
+                width: calc(100% / 2 - 1rem);
+
+            }
+        }
+
+
+        .right {
+            .container {
+                .profile {
+                    .social {
+                        flex-direction: column;
+
+                        .img-profile {
+                            padding-bottom: 1rem;
+
+                            .name {
+                                p {
+                                    font-size: 1rem;
+                                }
+                            }
+
+
+                        }
+
+                    }
+
+                    .description {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        .search {
+            display: none;
+        }
+
+        .phone-search {
+            display: block;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    main {
+        .left {
+            width: 100%;
+        }
+
+        .right {
+            display: none;
+
+        }
+    }
 }
