@@ -80,6 +80,12 @@ body {
 
 }
 
+.phone-logo {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: none;
+
+}
 
 /*header*/
 header {
@@ -97,12 +103,13 @@ header {
         }
 
         .logo {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
             margin-right: 1rem;
+
         }
 
         .search {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
 
             a {
                 text-decoration: none;
@@ -459,6 +466,16 @@ main {
 @media screen and (max-width:600px) {
 
     header {
+        .top {
+            .logo {
+                display: none;
+
+                .phone-logo {
+                    display: contents;
+                }
+            }
+        }
+
         .search {
             display: none;
         }
@@ -467,6 +484,13 @@ main {
             display: block;
             margin-top: 1.5rem;
             margin-right: 1rem;
+        }
+
+        .bottom {
+            a {
+                padding-right: 55%;
+            }
+
         }
     }
 
@@ -480,4 +504,8 @@ main {
 
         }
     }
+    .phone-logo {
+    display: block;
 }
+}
+
