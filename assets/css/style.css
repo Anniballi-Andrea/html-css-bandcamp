@@ -103,6 +103,9 @@ header {
 
         .search {
             margin-top: 1rem;
+            a:hover{
+                background-color: aqua;
+            }
 
             a {
                 text-decoration: none;
@@ -110,17 +113,38 @@ header {
                 background-color: var(--bc-search_bg);
                 padding: 0.5rem;
                 padding-right: 5rem;
+                
             }
         }
 
         .account {
-            margin-top: 1.3rem;
+            
+            
+            .sign{
+                height: 100%;
+                padding: 1.5rem 0.5rem;
+                
+            }
+            .log{
+                height: 100%;
+                padding: 1.5rem 0.5rem;
+            }
 
             a {
                 text-decoration: none;
                 color: var(--bc-light);
-                padding: 1.5rem 1rem 1.6rem;
+                
+                
             }
+        }
+
+        .log:hover {
+            background-color:var(--bc-search_color);
+        }
+
+
+        .sign:hover {
+            background-color:var(--bc-search_color);
         }
 
     }
