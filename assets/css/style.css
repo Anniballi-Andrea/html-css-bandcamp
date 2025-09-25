@@ -269,7 +269,6 @@ main {
 
     .right {
         width: 30%;
-        overflow-y: scroll;
 
         .container {
             color: var(--bc-light);
@@ -464,7 +463,7 @@ main {
                 }
                 
                 .profile {
-                    padding: 1.5rem 0;
+                    padding: 3rem 0;
                     .social {
                         flex-direction: column;
 
