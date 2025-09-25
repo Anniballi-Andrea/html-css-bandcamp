@@ -269,6 +269,9 @@ main {
 
     .right {
         width: 30%;
+        scrollbar-width: thin;
+        scrollbar-color: var(--bc-search_bg) var(--bc-primary);
+        overflow-y: scroll;
 
         .container {
             color: var(--bc-light);
