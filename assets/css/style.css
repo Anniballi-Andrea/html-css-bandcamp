@@ -114,12 +114,12 @@ header {
         }
 
         .account {
-            margin-top: 1rem;
+            margin-top: 1.3rem;
 
             a {
                 text-decoration: none;
                 color: var(--bc-light);
-                padding-right: 1.5rem;
+                padding: 1.5rem 1rem 1.6rem;
             }
         }
 
@@ -225,5 +225,44 @@ main {
         }
 
     }
+
+    .album{
+        background-color: var(--bc-light);
+        height: 3rem;
+        Margin: 3rem 1rem 0.5rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            padding-top: 0.9rem;
+            font-size: 1.2rem;
+            color: var(--bc-primary);
+        }
+    }
+
+    .wishlist{
+        background-color: var(--bc-primary);
+        height: 3rem;
+        Margin: 0 1rem 1.3rem;
+        border-radius: 5px;
+        border: 1px solid var(--bc-light);
+        display: flex;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            padding-top: 0.9rem;
+            font-size: 1.2rem;
+            color: var(--bc-light);
+        }
+
+    }
+
+    .duration_time{
+        Margin: 0 1rem;
+        color: var(--bc-light);
+        font-size: 0.9rem;
+    }
+    
 
 }
