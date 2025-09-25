@@ -87,6 +87,10 @@ body {
 
 }
 
+.sospansion{
+    display: none;
+}
+
 /*header*/
 header {
     height: 128px;
@@ -352,6 +356,7 @@ main {
 
             .profile {
                 padding: 3rem 0;
+                display: none;
 
                 .social {
                     padding-bottom: 3rem;
@@ -405,7 +410,7 @@ main {
                 }
 
                 .description {
-                    font-size: 2rem;
+                    font-size: 1.3rem;
                 }
             }
 
@@ -422,6 +427,14 @@ main {
 }
 
 @media screen and (max-width:744px) {
+
+    .sospansion{
+        display: inline;
+    }
+
+    .abbreviation{
+        display: none;
+    }
     main {
         .left {
 
@@ -434,7 +447,24 @@ main {
 
         .right {
             .container {
+                .play{
+                    .play-button{
+                        a{
+                            padding: 1rem 0.75rem;
+                        }
+                    }
+                    .album{
+                        margin-top: 1.5rem;
+                    }
+                    
+                }
+
+                .album{
+                    margin-top: 1.5rem;
+                }
+                
                 .profile {
+                    padding: 1.5rem 0;
                     .social {
                         flex-direction: column;
 
@@ -455,6 +485,9 @@ main {
                     .description {
                         font-size: 1rem;
                     }
+                }
+                .profile {
+                    display: block;
                 }
 
             }
