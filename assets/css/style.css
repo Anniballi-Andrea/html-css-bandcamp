@@ -101,24 +101,31 @@ header {
         display: flex;
         justify-content: space-between;
         background-color: var(--bc-primary);
+        align-items: center;
 
         .h_left {
             padding-left: 2rem;
+            padding-bottom: 1.5rem;
         }
 
         .logo {
             margin-top: 1rem;
             margin-right: 1rem;
+            padding-top: 1rem;
 
         }
 
         .search {
             margin-top: 1.5rem;
-
-            a {
+            color: var(--bc-search_color);
+            background-color: var(--bc-search_bg);
+            align-items: center;
+            padding: 0.5rem 3rem 0.5rem 0.5rem;
+           input{
                 text-decoration: none;
                 color: var(--bc-search_color);
                 background-color: var(--bc-search_bg);
+                border: none;
                 padding: 0.5rem;
                 padding-right: 5rem;
 
@@ -163,20 +170,20 @@ header {
         background-color: var(--bc-secondary);
 
         .genre {
-            height: 100%;
-            padding-top: 1.5rem;
-            padding-left: 2rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--bc-search_color);
             background-color: var(--bc-search_bg);
+            color: var(--bc-search_color);
             border: 1px solid var(--bc-search_color);
             border-radius: 20px;
-            padding: 0.5rem 12rem 0.5rem 0.5rem;
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 20rem 0.5rem 0.5rem;
 
+        }
 
+        input {
+            color: var(--bc-search_color);
+            background-color: var(--bc-search_bg);
+            border: none;
         }
     }
 
