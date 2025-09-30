@@ -242,8 +242,10 @@ main {
                 border-radius: 50%;
                 padding: 0.6rem 0.5rem;
 
-                i {
+                button {
                     color: var(--bc-light);
+                    background-color: var(--bc-primary);
+                    border: 0;
                 }
 
             }
@@ -300,11 +302,11 @@ main {
                 padding-top: 3rem;
 
                 .play-button {
-                    margin-top: 1.5rem;
+                    
                     padding-right: 1rem;
 
-                    a {
-                        padding: 1.5rem 1.2rem;
+                    button {
+                        padding: 1.5rem 1.3rem;
                         border-radius: 50%;
                         background-color: var(--bc-light);
                         color: var(--bc-primary);
